@@ -1,0 +1,97 @@
+#!/usr/bin/python3
+
+#Tool Name = Home-baked-hash-cracker
+#Author = ASHWINI SAHU (GitHub : ASHWIN990)
+#Date = 19/05/2020
+
+import argparse
+import os
+import sys
+import hashlib
+
+## COLOR ##
+
+black_col="\u001b[30;1m"
+red_col="\u001b[31;1m"
+green_col="\u001b[32;1m"
+yellow_col="\u001b[33;1m"
+blue_col="\u001b[34;1m"
+magenta_col="\u001b[35;1m"
+cyan_col="\u001b[36;1m"
+white_col="\u001b[37;1m"
+reset_col="\u001b[0m"
+
+def banner():
+    print(f"""{white_col}
+        )        (           
+ ( /(    (   )\ )   (    
+ )\()) ( )\ (()/(   )\   
+((_)\  )((_) /(_))(((_)  
+ _((_)((_)_ (_))  )\___  
+| || | | _ )| _ \((/ __| 
+| __ | | _ \|  _/ | (__  
+|_||_| |___/|_|    \___| 
+{yellow_col}HOME BAKED HASH  CRACKER{reset_col}""")
+
+def main():
+    parser = argparse.ArgumentParser(description=f"SHA2-384 Hash Cracker, Writeen by : {blue_col}ASHWINI SAHU{reset_col}, GITHUB : https:github.com/ASHWIN990")
+    parser.add_argument("--hash", metavar="HASH", required=True, type=str, help="Provide the path of the file of sha384 hash." )
+    parser.add_argument("--wordlist", metavar="WORDLIST", required=True, type=str, help="Provide the path of Wordlist.")
+
+    args = parser.parse_args()
+
+    print(f"\n{cyan_col}SHA2-384 Hash Cracker{reset_col}\n")
+
+    if os.path.isfile(args.hash):
+        sha384hash_path = args.hash
+    else:
+        print(f"{yellow_col}Hash path '{red_col}{args.hash}{yellow_col}' : not found.{reset_col}")
+        exit(0)
+
+    if os.path.isfile(args.wordlist):
+        wordlist_path = args.wordlist
+    else:
+        print(f"{yellow_col}Wordlist path '{red_col}{args.wordlist}{yellow_col}' : not found.{reset_col}")
+        exit(0)
+
+    hash_data = [line.strip() for line in open(sha384hash_path, 'r')]
+
+    wordlist_data = [line.strip() for line in open(wordlist_path, 'r')]
+
+    if len(hash_data) == 0:
+        print(f"{red_col}Hash file is empty{reset_col}")
+        exit(0)
+
+    if len(wordlist_data) == 0:
+        print(f"{red_col}Wordlist file is empty{reset_col}")
+        exit(0) 
+
+    hash_data_fin=[]
+
+    for sha384hasher in hash_data:
+        if len(sha384hasher) == 96:
+            hash_data_fin.append(sha384hasher)
+        else:
+            print(f"\n{white_col}{sha384hasher}{yellow_col} : is not a SHA2-384 Hash{reset_col}\n")
+
+    if len(hash_data_fin) == 0:
+        print(f"\n{red_col}No valid SHA2-384 hash found.{reset_col}")
+        exit(0)
+
+    for sha384hash in hash_data_fin:
+        for words in wordlist_data:
+            print(f"\r{yellow_col}Testing : '{blue_col}{words}{reset_col}'", end='            ', flush=True)
+            if sha384hash == hashlib.sha384(words.encode()).hexdigest():
+                sha384crack=words
+                pass_found = True
+                break
+            else:
+                pass_found = False
+        if pass_found == True:
+            print(f"\n{white_col}CONGRATULATIONS PASSWORD FOUND : {green_col}{sha384crack}{reset_col}")
+        else:
+            print(f"\n{red_col}No password found in Wordlist use another{reset_col}")
+
+if __name__ == "__main__":
+    banner()
+    main()
