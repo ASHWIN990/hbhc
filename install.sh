@@ -31,11 +31,11 @@ echo -e "                             \e[7;91mHOME BAKED HASH CRACKER\e[0m      
 ##### Creating the install function #####
 
 install(){
-    chmod +x md5*
+    chmod +x md5* | echo -e "CHANGING THE FILE PERMISSIONS"
     chmod +x sha*
-    mv -f sha* /usr/bin/
+    mv -f sha* /usr/bin/ | echo -e "MOVING THE PYTHON SCRIPTS IN /usr/bin"
     mv -f md5* /usr/bin/
-    cd .. && rm -rf HBHC/
+    cd .. && rm -rf HBHC/ | echo -e "Deleting the Directory"
     }
 
 ##### Calling the install function #####
