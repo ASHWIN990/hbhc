@@ -33,8 +33,8 @@ echo -e "                             \e[7;91mHOME BAKED HASH CRACKER\e[0m      
 install(){
     chmod +x md5*
     chmod +x sha*
-    mv -r sha* /usr/bin/
-    mv -r md5* /usr/bin/
+    mv -f sha* /usr/bin/
+    mv -f md5* /usr/bin/
     cd .. && rm -rf HBHC/
     }
 
