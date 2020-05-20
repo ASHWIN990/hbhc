@@ -1,0 +1,79 @@
+#!/usr/bin/python3
+
+#Tool Name = Home-baked-hash-cracker
+#Author = ASHWINI SAHU (GitHub : ASHWIN990)
+#Date = 19/05/2020
+
+
+import argparse
+import os
+## COLOR ##
+
+black_col="\u001b[30;1m"
+red_col="\u001b[31;1m"
+green_col="\u001b[32;1m"
+yellow_col="\u001b[33;1m"
+blue_col="\u001b[34;1m"
+magenta_col="\u001b[35;1m"
+cyan_col="\u001b[36;1m"
+white_col="\u001b[37;1m"
+reset_col="\u001b[0m"
+
+def banner():
+    print(f"""{white_col}
+    )           )         
+ ( /(    (   ( /(    (    
+ )\()) ( )\  )\())   )\   
+((_)\  )((_)((_)\  (((_)  
+ _((_)((_)_  _((_) )\___  
+| || | | _ )| || |((/ __| 
+| __ | | _ \| __ | | (__  
+|_||_| |___/|_||_|  \___| 
+{yellow_col}HOME BAKED  HASH  CRACKER{reset_col}""")
+
+def main():
+
+    print(f"\n{green_col}HBHC is a tool writeen in Python3 for Cracking the hashes in speed,\nit's small and handy tools required only 2 arguments.{reset_col}")
+
+    print(f"""
+HBHC consist of multiple tools listed below :-
+
+    md5-crack - Crack Non Slated MD5 Hashes.
+
+    sha1-crack - Crack SHA1 Hashes.
+
+    sha2-224-crack - Crack SHA2-224 Hashes.
+
+    sha2-256-crack - Crack SHA2-256 Hashes.
+
+    sha2-384-crack - Crack SHA2-384 Hashes.
+
+    sha2-512-crack - Crack SHA2-512 Hashes.
+
+    sha3-224-crack - Crack SHA3-224 Hashes.
+
+    sha3-256-crack - Crack SHA3-256 Hashes.
+
+    sha3-384-crack - Crack SHA3-384 Hashes.
+
+    sha3-512-crack - Crack SHA3-512 Hashes.""")
+    print(f"""
+USAGE
+       Example
+
+       md5-crack [--hash Path to file that contains Hashes] ["--wordlist Path to the wordlist]...""")
+    print(f"""
+OPTIONS
+        HBHC SCRIPTS ONLY TAKE TWO PARAMETERS:-
+
+        --hash -- Path to the file which contain the respective hash
+
+                                (Can have Multiple but in diffrent line)
+
+        --wordlist -- Path to the wordlist file.
+
+            {red_col}FOR MORE INFO CHECK hbhc MAN PAGE{reset_col}""")
+
+if __name__ == "__main__":
+    banner()
+    main()

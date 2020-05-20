@@ -23,15 +23,15 @@ reset_col="\u001b[0m"
 
 def banner():
     print(f"""{white_col}
-        )        (           
- ( /(    (   )\ )   (    
- )\()) ( )\ (()/(   )\   
-((_)\  )((_) /(_))(((_)  
- _((_)((_)_ (_))  )\___  
-| || | | _ )| _ \((/ __| 
-| __ | | _ \|  _/ | (__  
-|_||_| |___/|_|    \___| 
-{yellow_col}HOME BAKED HASH  CRACKER{reset_col}""")
+    )           )         
+ ( /(    (   ( /(    (    
+ )\()) ( )\  )\())   )\   
+((_)\  )((_)((_)\  (((_)  
+ _((_)((_)_  _((_) )\___  
+| || | | _ )| || |((/ __| 
+| __ | | _ \| __ | | (__  
+|_||_| |___/|_||_|  \___| 
+{yellow_col}HOME BAKED  HASH  CRACKER{reset_col}""")
 
 def main():
     parser = argparse.ArgumentParser(description=f"SHA3-512 Hash Cracker, Writeen by : {blue_col}ASHWINI SAHU{reset_col}, GITHUB : https:github.com/ASHWIN990")

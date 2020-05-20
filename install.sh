@@ -35,6 +35,7 @@ install(){
     chmod +x sha*
     mv -f sha* /usr/bin/ | echo -e "MOVING THE PYTHON SCRIPTS IN /usr/bin"
     mv -f md5* /usr/bin/
+    mv -f hbhc /usr/bin/
     mv -f .man/hbhc.1.gz /usr/local/share/man/man1/hbhc.1.gz
     mandb -q | echo -e "\e[93;1mUPDATING AND INSTALLING THE MANDB"
     cd .. && rm -rf HBHC/ | echo -e "DELETING THE GIT CLONED DIRECTORY"
