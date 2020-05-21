@@ -47,4 +47,4 @@ echo -e "INSTALLATION COMPLETED"
 ##### Calling the install function #####
 
 banner
-#install
+install
