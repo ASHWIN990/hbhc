@@ -76,7 +76,7 @@ HBHC consist of multiple tools and each can be called individually from shell.
     * And then run
 
     ```python
-    python3 sha1-cracker --hash hash.txt --wordlist wordlist.txt#Or any other script
+    python3 sha1-cracker --hash hash.txt --wordlist wordlist.txt  #Or any other script
     ```
 
 ### Options 
@@ -91,7 +91,7 @@ HBHC SCRIPTS ONLY TAKE TWO PARAMETERS:-
 
 ## Bugs
 
-Right now i don;t find any bug, but if you fonud please report it.
+Right now i don't find any bug, but if you find any please report it.
 
 ## Authour 
 
