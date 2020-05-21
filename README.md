@@ -51,6 +51,13 @@ bash install.sh | echo "3. Install with this command"
 ```sh
 git clone https://github.com/ASHWIN990/HBHC.git
 ```
+
+## Unistallation for Linux/Unix
+
+*To uninstall HBHC from the Linux/Unix System, run this command :-*
+```sh
+curl -s https://raw.githubusercontent.com/ASHWIN990/HBHC/master/uninstall.sh | sudo bash
+```
 ## Usage
 <h3 align="center">Usage In Linux/Unix</h3>
 <p align="center">
