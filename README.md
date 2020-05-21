@@ -73,10 +73,10 @@ HBHC consist of multiple tools and each can be called individually from shell.
 * IN Linux/Unix you can call the script from any where
 
 * IN Windows You must be in the Directory or folder where you cloned the repo.
-    * And the run
+    * And then run
 
     ```python
-    python3 sha1-cracker #Or any other script
+    python3 sha1-cracker --hash hash.txt --wordlist wordlist.txt#Or any other script
     ```
 
 ### Options 
