@@ -1,7 +1,7 @@
 <h1 align="center">HBHC 🏡 🍪 🔑 🔨</h1>
 
 <h3 align="center">HBHC stands for Home Baked Hash Cracker.</h3>
-<h4 align="center">This is a tool for cracking famoush Hashes.</h4>
+<h4 align="center">This is a tool for cracking famous Hashes.</h4>
 
 ## Description
 
