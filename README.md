@@ -46,6 +46,18 @@ cd HBHC | echo -e "2. Go to the cloned directory"
 bash install.sh | echo "3. Install with this command"
 ```
 
+## Package Manager
+
+**Arch Linux**
+
+*hbhc is available in AUR by the name* **hbhc-git**
+
+```
+pamac install hbhc-git
+```
+```
+yay -S hbhc-git
+```
 ## Installation For Windows
 
 ```sh
