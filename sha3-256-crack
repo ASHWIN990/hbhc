@@ -35,7 +35,7 @@ def banner():
 
 def main():
     parser = argparse.ArgumentParser(description=f"SHA3-256 Hash Cracker, Writeen by : {blue_col}ASHWINI SAHU{reset_col}, GITHUB : https:github.com/ASHWIN990")
-    parser.add_argument("--hash", metavar="HASH", required=True, type=str, help="Provide the path of the file of sha3_256 hash." )
+    parser.add_argument("--hash", metavar="HASH", required=True, type=str, help="Provide the path of the file of SHA3-256 hash." )
     parser.add_argument("--wordlist", metavar="WORDLIST", required=True, type=str, help="Provide the path of Wordlist.")
 
     args = parser.parse_args()
