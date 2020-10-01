@@ -22,7 +22,7 @@ HBHC is a tool writeen in Python3 for Cracking the hashes in speed, it's small a
 
 ## Prerequisite Linux/Unix & Windows
 
-*To run this tool you must have installed Python3*
+*To Run This Tool You MUST have installed Python3 or newer version*
 
 * How to install Python3 in linux Distro wise
     * Arch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| pacman -S python3
@@ -107,4 +107,4 @@ Right now i don't find any bug, but if you find any please report it.
 
 ## Authour 
 
-My name is Ashwini Sahu, and i write programs, If you like this please give a Star 🌟
+My Name is Ashwini Sahu, and i write programs, If you like this please give a Star 🌟
