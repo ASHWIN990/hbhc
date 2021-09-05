@@ -38,12 +38,12 @@ HBHC is a tool writeen in Python3 for Cracking the hashes in speed, it's small a
 
 ## Installation For Linux/Unix
 
-```sh
-git clone https://github.com/ASHWIN990/HBHC.git | echo "1. Clone the repositry"
+```console
+foo@bar:~$ git clone https://github.com/ASHWIN990/HBHC.git
 
-cd HBHC | echo -e "2. Go to the cloned directory"
+foo@bar:~$ cd HBHC
 
-bash install.sh | echo "3. Install with this command"
+foo@bar:~$ bash install.sh
 ```
 
 ## Package Manager
@@ -67,8 +67,8 @@ git clone https://github.com/ASHWIN990/HBHC.git
 ## Unistallation for Linux/Unix
 
 *To uninstall HBHC from the Linux/Unix System, run this command :-*
-```sh
-curl -s https://raw.githubusercontent.com/ASHWIN990/HBHC/master/uninstall.sh | sudo bash
+```console
+foo@bar:~$ curl -s https://raw.githubusercontent.com/ASHWIN990/HBHC/master/uninstall.sh | sudo bash
 ```
 ## Usage
 <h3 align="center">Usage In Linux/Unix</h3>
