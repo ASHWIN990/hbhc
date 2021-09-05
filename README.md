@@ -1,7 +1,19 @@
-<h1 align="center">HBHC 🏡 🍪 🔑 🔨</h1>
+<div align="center" markdown="1">
 
-<h3 align="center">HBHC stands for Home Baked Hash Cracker.</h3>
-<h4 align="center">This is a tool for cracking famous Hashes.</h4>
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/ASHWIN990/hbhc/graphs/commit-activity)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FASHWIN990%2Fhbhc&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=false)](https://ashwini.codes)
+
+</div>
+
+<p align="center">
+    <a href="https://github.com/ASHWIN990/hbhc">
+        <img align="center" src="./screenshots/banner.png" alt="hbhc" border="0"/><br>
+    </a>
+</p>
+
+<h3 align="center">HBHC  🏡 🍪 🔑 🔨</h3>
+<h4 align="center">A tool for cracking famous Hashes.</h4>
 
 ## Description
 
@@ -52,11 +64,11 @@ foo@bar:~$ bash install.sh
 
 *hbhc is available in AUR by the name* **hbhc-git**
 
+```console
+foo@bar:~$ pamac install hbhc-git
 ```
-pamac install hbhc-git
-```
-```
-yay -S hbhc-git
+```console
+foo@bar:~$  yay -S hbhc-git
 ```
 ## Installation For Windows
 
